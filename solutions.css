@@ -88,18 +88,50 @@ transition: border-radius 1s , filter 1s;
 
 /* ESERCIZIO 10 */
 .ex-10-icon{
-    animation-name: rotazione;
     animation-direction: reverse;
-    animation: transform 2s infinite;
+    animation: transform 1s infinite;
+}
+.ex-10-icon{
+    transform: rotate(360deg);
 }
 
-@keyframes rotazione{
-    0%{
-        transform: rotate(45deg)
-    }
+/* ESERCIZIO 12 */
+.ex-12-top-white{
+    animation: spostamento 2s;
+    animation-iteration-count: infinite;
+}
+
+.ex-12-bottom-white{
+    animation-name: spostamento-sotto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spostamento{
+0%{
+    right:10%;
+}
+
+50%{
   
-    100%{
-        transform: rotate(-45deg)
+    left: 135px;
+}
+
+100%{
+    right: 10%;
+}
+}
+
+@keyframes spostamento-sotto{
+    0%{
+        right: 20%;
     }
 
+    50%{
+      left: 0px;
+    }
+
+    100%{
+        right: 20%;
+    }
 }
