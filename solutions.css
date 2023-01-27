@@ -96,15 +96,16 @@ transition: border-radius 1s , filter 1s;
 }
 
 /* ESERCIZIO 12 */
-.ex-12-top-white{
+.ex-12-top-white{ 
     animation: spostamento 2s;
     animation-iteration-count: infinite;
 }
 
 .ex-12-bottom-white{
     animation-name: spostamento-sotto;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
 
 @keyframes spostamento{
@@ -128,7 +129,7 @@ transition: border-radius 1s , filter 1s;
     }
 
     50%{
-      left: 0px;
+      right: 135px;
     }
 
     100%{
